@@ -1,0 +1,4 @@
+#!/bin/zsh
+
+logger -s "Killing Transmission now…"
+ps aux | grep -v grep | grep -i Transmission | awk '{print $2;}' | xargs kill -9
